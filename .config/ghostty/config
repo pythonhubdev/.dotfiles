@@ -1,0 +1,11 @@
+theme = "Github Dark"
+
+auto-update = "download"
+
+macos-icon-frame = "plastic"
+
+background-opacity = 0.8
+background-blur-radius = 20
+
+fullscreen = true
+macos-non-native-fullscreen = true
