@@ -1,0 +1,45 @@
+set mapleader = " "
+set relativenumber
+
+""" Plugins
+
+set surround
+set commentary
+
+
+" Remap Escape to 'jk' in insert mode
+imap jk <Esc>
+
+" Quick navigation to declaration, implementation, and usage
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gD :action GotoImplementation<CR>
+nnoremap gr :action GotoUsage<CR>
+
+" Refactor with Vim motions
+nnoremap <leader>r :action Refactor<CR>
+
+" Format code
+nnoremap <leader>f :action ReformatCode<CR>
+
+" Undo and redo
+nnoremap U :action Undo<CR>
+nnoremap <C-r> :action Redo<CR>
+
+" Yank to system clipboard
+vnoremap "+y "*y
+vnoremap "+d "*d
+vnoremap "+p "*p
+nnoremap "+p "*p
+
+" Enable Vim features in insert mode
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+
+" Remap keys for easier navigation and editing
+" Better navigation between split panes
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
